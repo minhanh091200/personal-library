@@ -1,0 +1,102 @@
+:root {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #edc7b7;
+}
+
+.header {
+    background-color: #eee2dc;
+    height: 10vh;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.25em;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+button {
+    margin: 3vh auto;
+    padding: 0.5em 4em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25em;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.add-book {
+    background-color: #123c69;
+    border: 2px solid white;
+    color: white;
+    padding: 0.8em 1em;
+    border-radius: 15px;
+}
+
+.add-book:hover {
+    background-color: white;
+    color: #123c69;
+    border: 2px solid #123c69;
+}
+
+.modal-title {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+form {
+    width: calc(400px + 0.5vw);
+}
+
+.books {
+    top: 23vh;
+    position: absolute;
+    padding: 0;
+    padding-bottom: 10vh;
+}
+
+.card-header {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 1.25em;
+}
+
+.isReadYes {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #90EE90;
+}
+
+.isReadYes:hover {
+    background-color: #90EE90;
+}
+
+.isReadNo {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #F08080;
+}
+
+.remove {
+    margin-top: 0;
+    background-color: gainsboro;
+}
