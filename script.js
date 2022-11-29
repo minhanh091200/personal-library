@@ -6,6 +6,10 @@ function Book(title, author, pages, bool) {
     this.author = author;
     this.pages = pages;
     this.read = false;
+
+    this.toggleRead = function () {
+        this.read == true ? this.read = false : this.read = true;
+    }
 }
 
 function addBookToLibrary() {
@@ -63,7 +67,7 @@ function displayLibrary() {
 
         readStatus.addEventListener('click', function () {
             let index = readStatus.dataset.indexNumber;
-            myLibrary[index].read == true ? myLibrary[index].read = false : myLibrary[index].read = true;
+            myLibrary[index].toggleRead();
         });
 
         //remove button removes book from array
